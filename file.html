@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+    integrity="sha256-aUL5sUzmON2yonFVjFCojGULVNIOaPxlH648oUtA/ng=" crossorigin="anonymous">
+  <style>
+    body,
+    html {
+      height: 100%;
+      /* font-family: "Inconsolata", sans-serif; */
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("cup-hot-coffee-latte-table-cafe-with-shallow-depth-field_258743-129.webp");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Open from 6am to 5pm</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-black" style="font-size:90px">Lolaya Cafe</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-black">Ramses, El-Montaza, Heliopolis, Cairo Governorate 4460241</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+        <p>As the coffee shop market becomes more popular, the number of cafe websites is growing. The internet and
+          social media play an important role in finding new customers.
+
+          Successful sites are a good representation of the shop.
+
+          They manage to convey the unique experience the brand offers. They also help to convince visitors to travel
+          and try the menu.
+
+          The best cafe websites have a clean layout so visitors can find all the information they need. They also use
+          attractive and professional-looking images.
+
+          Here is a list of some great cafe websites with a modern design. It features cafe and bakery business
+          websites, coffee roasters, coffee bars, French and Italian-influenced cafe websites, and similar businesses.
+
+          The best coffee shop sites share some key elements. They are a great source of inspiration for web designers.
+        </p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new
+              sweet.</i></p>
+          <p>Chef, Coffeeist and Owner:lana,lojain,yasmina</p>
+        </div>
+        <img src="parisian-coffee-shop-style-with-tasty-coffee-served-wooden-table-coffee-shop-design_482257-18283.webp"
+          style="width:100%;max-width:1000px" class="w3-margin-top">
+        <p><strong>Opening hours:</strong> everyday from 6am to 12pm.</p>
+        <p><strong>Address:</strong> Ramses, El-Montaza, Heliopolis</p>
+      </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+        <div class="w3-row w3-center w3-card w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+            <div class="w3-col s6 tablink">Eat</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+            <div class="w3-col s6 tablink">Drink</div>
+          </a>
+        </div>
+
+        <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Bread Basket</h5>
+          <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+          <h5>Honey Almond Granola with Fruits</h5>
+          <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+          <h5>Belgian Waffle</h5>
+          <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+          <h5>Scrambled eggs</h5>
+          <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+          <h5>Blueberry Pancakes</h5>
+          <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+        </div>
+
+        <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Coffee</h5>
+          <p class="w3-text-grey">Regular coffee 2.50</p><br>
+
+          <h5>Chocolato</h5>
+          <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+
+          <h5>Corretto</h5>
+          <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+
+          <h5>Iced tea</h5>
+          <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+
+          <h5>Soda</h5>
+          <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+        </div>
+        <img src="side-view-cup-coffee-latte_140725-12114.webp" style="width:100%;max-width:1000px;margin-top:32px;">
+      </div>
+    </div>
+
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+        <p>Find us at some address at some place.</p>
+        <img src="bccea44f2468d9840fbf855a270b5055.jpg" class="w3-image" style="width:100%">
+        <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand
+          your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+        <form id="form">
+          <p><input id="Name" name="name" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name"
+              required name="Name"></p>
+          <p><input id="numbers" name="num" class="w3-input w3-padding-16 w3-border" type="number"
+              placeholder="How many people" required name="People"></p>
+          <p><input id="date" name="time" class="w3-input w3-padding-16 w3-border" type="datetime-local"
+              placeholder="Date and time" required name="date" value="2023-5-15 T20:00 "></p>
+          <p><input id="Message" name="req" class="w3-input w3-padding-16 w3-border" type="text"
+              placeholder="Message \ Special requirements" required name="Message"></p>
+          <p><button onclick="sendMessage()" class="w3-button w3-black" type="button">SEND MESSAGE</button></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- End page content -->
+  </div>
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+  </script>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

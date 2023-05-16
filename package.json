@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "joi": "^17.9.2",
+    "mongodb": "^5.5.0"
+  }
+}
